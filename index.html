@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html> lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Conectadxs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="questionText">¡Bienvenidxs a nuestra página!</h1>
+
+  <h1 id="questionText">¡Bienvenidxs a nuestra página!</h1>
     <p>Podéis conocer todo lo que ofrecemos.</p>
     <button onclick="saludar()">Hazme clic</button>
-
-    <script>
+  <script>
         function saludar() {
             alert("¡Hola! Gracias por visitar mi página.");
         }
     </script>
-</body>
+
+
+
+ <!-- Encabezado / Menú -->
+
+ <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nuestros clubs">Nuestros clubs</a></li>
+                <li><a href="#nuestro contenido">Nuestro contenido</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+ <!-- Secciones -->
+
+ <section id="inicio">
+        <h1>Bienvenidos a nuestra página web!</h1>
+        <p>Conoce más sobre nosotros.</p>
+    </section>
+
+ <section id="nuestros clubs">
+        <h2>Nuestros clubs</h2>
+        <p>Estas son algunas de las cosas qu ofrecemos.</p>
+    </section>
+
+  <section id="nuestro contenido">
+        <h2>Nuestro contenido</h2>
+        <p>Estos son algunos de nuestros carteles!.</p>
+    </section>
+
+ <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes enviarnos sugerencias o dudas.</p>
+    </section>
+
+
+ </body>
 </html>
