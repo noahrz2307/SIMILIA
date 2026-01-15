@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIMILIA - Conectando generaciones a través de proyectos intergeneracionales">
     <title>SIMILIA - Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
     <!-- Encabezado / Menú -->
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li><a href="proyecto.html">Proyecto Intergeneracional</a></li>
                 <li><a href="contenido.html">Nuestro Contenido</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -38,10 +40,14 @@
         </div>
     </footer>
 
-    <script>
-        function saludar() {
-            alert("¡Hola! Gracias por visitar mi página.");
-        }
+    <script defer>
+        (function() {
+            'use strict';
+            function saludar() {
+                alert("¡Hola! Gracias por visitar mi página.");
+            }
+            window.saludar = saludar;
+        })();
     </script>
 </body>
 </html>
