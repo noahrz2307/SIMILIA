@@ -99,7 +99,7 @@ h1 {
 }
 
 .titulo-principal {
-    color: var(--color-text);
+    color: #000 !important;
 }
 
 .contacto {
