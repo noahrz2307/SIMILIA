@@ -143,3 +143,12 @@ button:hover {
         margin-right: 0;
     }
 }
+#inicio {
+    text-align: center;
+}
+
+#inicio h1 {
+    color: black;
+    font-size: 64px;
+    font-weight: bold;
+}
