@@ -91,7 +91,7 @@ main {
 }
 
 h1 {
-    color: var(--color-primary);
+    color: #000;
     margin-bottom: var(--spacing-md);
     text-align: center;
     font-size: var(--font-size-large);
@@ -108,6 +108,7 @@ h1 {
 }
 
 .contacto h1 {
+    color: #000;
     font-size: var(--font-size-large);
     margin-bottom: var(--spacing-lg);
 }
