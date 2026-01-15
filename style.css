@@ -1,15 +1,46 @@
-/* GENERAL */
+/* ============================================
+   VARIABLES CSS
+   ============================================ */
+:root {
+    --color-primary: #2E86C1;
+    --color-primary-dark: #1e6ba8;
+    --color-text: #000;
+    --color-bg-light: #f0f0f0;
+    --color-border: #eee;
+    --spacing-xs: 10px;
+    --spacing-sm: 15px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 50px;
+    --border-radius: 4px;
+    --transition-base: 0.3s ease;
+    --font-size-base: 16px;
+    --font-size-small: 12px;
+    --font-size-large: 48px;
+    --max-width: 1200px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    color: var(--color-text);
     line-height: 1.6;
 }
 
-/* HEADER */
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
 header {
-    border-bottom: 1px solid #eee;
-    padding: 20px 40px;
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--spacing-md) var(--spacing-xl);
 }
 
 nav ul {
@@ -18,7 +49,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: var(--spacing-lg);
     flex-wrap: wrap;
 }
 
@@ -28,127 +59,174 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-text);
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all var(--transition-base);
+    padding: 5px var(--spacing-xs);
+    border-radius: var(--border-radius);
+    display: inline-block;
 }
 
-nav a:hover {
-    color: #2E86C1;
+nav a:hover,
+nav a:focus {
+    color: var(--color-primary);
+    background-color: var(--color-bg-light);
+    outline: none;
 }
 
-/* MAIN CONTENT */
+nav a[aria-current="page"] {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
 main {
     min-height: calc(100vh - 200px);
-    padding: 50px 40px;
-    max-width: 1200px;
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 
 h1 {
-    color: #2E86C1;
-    margin-bottom: 20px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    font-size: var(--font-size-large);
+    font-weight: bold;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #2E86C1;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #1e6ba8;
-}
-
-/* CONTACTO */
 .contacto {
     padding: 100px 80px;
     text-align: center;
 }
 
 .contacto h1 {
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-lg);
 }
 
 .contacto p {
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: var(--font-size-base);
+    margin: var(--spacing-xs) 0;
 }
 
-/* FOOTER */
+/* ============================================
+   BUTTONS
+   ============================================ */
+button {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-base);
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
 .footer {
-    border-top: 1px solid #eee;
-    padding: 30px 40px;
-    font-size: 12px;
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    font-size: var(--font-size-small);
     text-align: center;
 }
 
 .footer-links {
-    margin-top: 10px;
+    margin-top: var(--spacing-xs);
 }
 
 .footer-links a {
-    margin-right: 15px;
+    margin-right: var(--spacing-sm);
     text-decoration: none;
-    color: #000;
-    transition: color 0.3s ease;
+    color: var(--color-text);
+    transition: color var(--transition-base);
 }
 
-.footer-links a:hover {
-    color: #2E86C1;
+.footer-links a:hover,
+.footer-links a:focus {
+    color: var(--color-primary);
     text-decoration: underline;
+    outline: none;
 }
 
-/* RESPONSIVE */
+/* ============================================
+   LINKS
+   ============================================ */
+a[href^="mailto:"] {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="mailto:"]:focus {
+    text-decoration: underline;
+    outline: 1px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
 @media (max-width: 768px) {
+    :root {
+        --spacing-xl: 20px;
+        --spacing-xxl: 30px;
+        --font-size-large: 36px;
+    }
+
     header {
-        padding: 15px 20px;
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
     nav ul {
-        gap: 15px;
+        gap: var(--spacing-sm);
         flex-direction: column;
         align-items: center;
     }
 
     main {
-        padding: 30px 20px;
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 
     .contacto {
-        padding: 50px 20px;
-    }
-
-    .contacto h1 {
-        font-size: 36px;
+        padding: var(--spacing-xxl) var(--spacing-md);
     }
 
     .footer {
-        padding: 20px;
+        padding: var(--spacing-md);
     }
 
     .footer-links {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: var(--spacing-xs);
     }
 
     .footer-links a {
         margin-right: 0;
     }
 }
-#inicio {
-    text-align: center;
-}
 
-#inicio h1 {
-    color: black;
-    font-size: 64px;
-    font-weight: bold;
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
