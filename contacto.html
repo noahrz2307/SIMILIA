@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Conectadxs</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contacta con SIMILIA - Te responderemos en un plazo máximo de 48h laborables">
+    <title>Contacto - SIMILIA</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
     <!-- Encabezado / Menú -->
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
+            <a href="index.html" class="logo" aria-label="Inicio - SIMILIA">
+                <img src="img/Logo vectores.png" alt="Logo SIMILIA">
+            </a>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proyecto.html">Proyecto Intergeneracional</a></li>
                 <li><a href="contenido.html">Nuestro Contenido</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +27,7 @@
     <!-- CONTENIDO CONTACTO -->
     <main class="contacto">
         <h1>CONTACTO</h1>
-        <p>Contacta con nosotros en <strong>conectadxs@gmail.com</strong></p>
+        <p>Contacta con nosotros en <a href="mailto:similia@gmail.com"><strong>similia@gmail.com</strong></a></p>
         <p>Te responderemos en un plazo máximo de 48h laborables.</p>
     </main>
 
