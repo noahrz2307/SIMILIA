@@ -56,6 +56,8 @@ nav .logo {
     align-items: center;
     padding: 0;
     text-decoration: none;
+    min-width: 200px;
+    min-height: 50px;
 }
 
 nav .logo img {
@@ -63,10 +65,11 @@ nav .logo img {
     max-width: 200px;
     height: auto;
     width: auto;
-    display: block;
-    visibility: visible;
-    opacity: 1;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     object-fit: contain;
+    background: transparent;
 }
 
 nav ul {
