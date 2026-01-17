@@ -133,12 +133,17 @@ main .descripcion {
     margin-right: auto;
 }
 
-main .video-full-width {
+.video-container {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    padding: var(--spacing-xxl) 0;
+}
+
+.video-full-width {
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
     display: block;
-    margin-top: var(--spacing-xxl);
+    border: none;
 }
 
 .contacto {
