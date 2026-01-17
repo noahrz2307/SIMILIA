@@ -126,6 +126,21 @@ h1 {
     font-family: 'Covered By Your Grace', cursive;
 }
 
+main .descripcion {
+    margin-top: 6em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .video-full-width {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: var(--spacing-xxl);
+}
+
 .contacto {
     padding: var(--spacing-contacto);
 }
