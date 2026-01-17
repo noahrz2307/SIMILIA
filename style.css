@@ -59,8 +59,11 @@ nav .logo {
 
 nav .logo img {
     max-height: 50px;
+    height: auto;
     width: auto;
     display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 nav ul {
@@ -127,7 +130,7 @@ h1 {
 }
 
 main .descripcion {
-    margin-top: 6em;
+    margin-top: var(--spacing-xxl);
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -135,15 +138,17 @@ main .descripcion {
 
 .video-container {
     width: 100%;
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-lg) 0;
+    margin: var(--spacing-lg) 0;
 }
 
 .video-full-width {
     width: 100%;
-    height: 80vh;
-    min-height: 600px;
+    max-width: 800px;
+    height: 450px;
     display: block;
     border: none;
+    margin: 0 auto;
 }
 
 .contacto {
