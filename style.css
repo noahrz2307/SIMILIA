@@ -327,25 +327,47 @@ a[href^="mailto:"]:focus {
 }
 
 .contenido-instagram {
-    margin-top: 60rem;
+    margin-top: 50rem;
 }
-.galeria-imagenes {
+/* ============================================
+   GALERÍA DE IMÁGENES
+   ============================================ */
+   .galeria-imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* cada imagen ocupa mínimo 150px */
-    gap: 10px; /* espacio entre imágenes */
-    margin: 20px 0; /* separación arriba y abajo */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* ahora cada imagen mínima 200px */
+    gap: 15px; /* un poco más de espacio entre imágenes */
+    margin: 30px 0; /* separación arriba y abajo */
 }
 
 .galeria-imagenes img {
-    width: 100%;   /* se ajusta al contenedor de la cuadrícula */
-    height: auto;  /* mantiene proporción */
-    object-fit: cover; /* recorta si hace falta para que encaje bien */
-    border-radius: 8px; /* esquinas redondeadas, opcional */
-    cursor: pointer; /* opcional, si quieres que parezca clicable */
+    width: 100%;       /* se ajusta al contenedor de la cuadrícula */
+    height: auto;      /* mantiene proporción */
+    object-fit: cover; /* recorta si hace falta */
+    border-radius: 8px; /* esquinas redondeadas */
+    cursor: pointer;    /* opcional, efecto clicable */
     transition: transform 0.3s; /* efecto al pasar el ratón */
 }
 
 .galeria-imagenes img:hover {
-    transform: scale(1.05); /* efecto zoom al pasar el ratón */
+    transform: scale(1.05); /* ligero zoom al pasar el ratón */
 }
 
+/* Separación correcta antes del contenido de Instagram */
+.contenido-instagram {
+    margin-top: 3rem; /* separación decente entre galería y sección de Instagram */
+}
+
+/* ============================================
+   INSTAGRAM
+   ============================================ */
+.instagram-videos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.instagram-small {
+    max-width: 320px;
+    width: 100%;
+}
