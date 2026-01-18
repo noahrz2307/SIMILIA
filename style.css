@@ -334,7 +334,7 @@ a[href^="mailto:"]:focus {
    ============================================ */
    .galeria-imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* ahora cada imagen mínima 200px */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* ahora cada imagen mínima 200px */
     gap: 15px; /* un poco más de espacio entre imágenes */
     margin: 30px 0; /* separación arriba y abajo */
 }
