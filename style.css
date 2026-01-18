@@ -327,6 +327,25 @@ a[href^="mailto:"]:focus {
 }
 
 .contenido-instagram {
-    margin-top: 20rem;
+    margin-top: 60rem;
+}
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* cada imagen ocupa mínimo 150px */
+    gap: 10px; /* espacio entre imágenes */
+    margin: 20px 0; /* separación arriba y abajo */
+}
+
+.galeria-imagenes img {
+    width: 100%;   /* se ajusta al contenedor de la cuadrícula */
+    height: auto;  /* mantiene proporción */
+    object-fit: cover; /* recorta si hace falta para que encaje bien */
+    border-radius: 8px; /* esquinas redondeadas, opcional */
+    cursor: pointer; /* opcional, si quieres que parezca clicable */
+    transition: transform 0.3s; /* efecto al pasar el ratón */
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.05); /* efecto zoom al pasar el ratón */
 }
 
