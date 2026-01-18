@@ -327,7 +327,7 @@ a[href^="mailto:"]:focus {
 }
 
 .contenido-instagram {
-    margin-top: 55rem;
+    margin-top: 60rem;
 }
 /* ============================================
    GALERÍA DE IMÁGENES
@@ -379,9 +379,10 @@ a[href^="mailto:"]:focus {
     flex-wrap: wrap;      /* para que se adapte en móviles */
 }
 
-.texto-imagen .texto-izquierda {
-    flex: 1;              /* el texto ocupa el espacio disponible */
-    min-width: 250px;     /* ancho mínimo para que no se rompa en móviles */
+.texto-centrado {
+    flex: 1;              /* ocupa el espacio disponible */
+    min-width: 250px;     /* ancho mínimo para móviles */
+    text-align: center;   /* centra el texto horizontalmente */
 }
 
 .imagen-rotada {
