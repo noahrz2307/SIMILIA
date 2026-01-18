@@ -374,19 +374,25 @@ a[href^="mailto:"]:focus {
 
 .texto-imagen {
     display: flex;
-    align-items: center;  /* centra verticalmente la imagen con el texto */
-    gap: 20px;            /* espacio entre texto e imagen */
-    flex-wrap: wrap;      /* para que se adapte en móviles */
+    align-items: center;  /* centra verticalmente el texto con las imágenes */
+    gap: 20px;            /* espacio entre texto e imágenes */
+    flex-wrap: wrap;      /* permite que se acomoden en móviles */
 }
 
 .texto-centrado {
-    flex: 1;              /* ocupa el espacio disponible */
-    min-width: 250px;     /* ancho mínimo para móviles */
+    flex: 1;              /* ocupa todo el espacio disponible */
+    min-width: 250px;     
     text-align: center;   /* centra el texto horizontalmente */
 }
 
+.imagenes-juntas {
+    display: flex;
+    flex-direction: column; /* apila las imágenes verticalmente */
+    gap: 15px;             /* espacio entre las imágenes */
+}
+
 .imagen-rotada {
-    width: 200px;             /* tamaño de la imagen */
-    transform: rotate(-5deg); /* ligera rotación hacia la izquierda */
-    border-radius: 8px;       /* opcional: esquinas redondeadas */
+    width: 200px;           
+    transform: rotate(-5deg); 
+    border-radius: 8px;     
 }
