@@ -313,3 +313,15 @@ a[href^="mailto:"]:focus {
         transition-duration: 0.01ms !important;
     }
 }
+
+.instagram-videos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* en móvil se ponen uno debajo del otro */
+}
+
+.instagram-small {
+    max-width: 320px;
+    width: 100%;
+}
