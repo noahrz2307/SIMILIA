@@ -325,3 +325,6 @@ a[href^="mailto:"]:focus {
     max-width: 320px;
     width: 100%;
 }
+.contenido-instagram {
+    margin-top: 8rem; /* ≈ 10 líneas */
+}
