@@ -371,3 +371,21 @@ a[href^="mailto:"]:focus {
     max-width: 320px;
     width: 100%;
 }
+
+.texto-imagen {
+    display: flex;
+    align-items: center;  /* centra verticalmente la imagen con el texto */
+    gap: 20px;            /* espacio entre texto e imagen */
+    flex-wrap: wrap;      /* para que se adapte en móviles */
+}
+
+.texto-imagen .texto-izquierda {
+    flex: 1;              /* el texto ocupa el espacio disponible */
+    min-width: 250px;     /* ancho mínimo para que no se rompa en móviles */
+}
+
+.imagen-rotada {
+    width: 200px;             /* tamaño de la imagen */
+    transform: rotate(-5deg); /* ligera rotación hacia la izquierda */
+    border-radius: 8px;       /* opcional: esquinas redondeadas */
+}
