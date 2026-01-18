@@ -142,6 +142,14 @@ main .descripcion {
     margin-right: auto;
 }
 
+.texto-izquierda {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: var(--spacing-md);
+}
+
 .video-container {
     width: 100%;
     padding: var(--spacing-lg) 0;
