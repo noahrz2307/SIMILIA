@@ -147,7 +147,7 @@ main .descripcion {
     text-align: left;
     margin-left: 0;
     margin-right: auto;
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-xxl);
     display: block;
 }
 
