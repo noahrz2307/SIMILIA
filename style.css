@@ -382,7 +382,7 @@ a[href^="mailto:"]:focus {
 .texto-centrado {
     text-align: center;  /* centra el texto */
     max-width: 800px;    /* opcional: limita el ancho del párrafo */
-    margin: 0 auto 30px auto; /* centrado y espacio debajo */
+    margin: 0 auto 50px auto; /* centrado y espacio debajo */
 }
 
 .galeria-horizontal {
