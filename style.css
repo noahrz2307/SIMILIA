@@ -380,19 +380,26 @@ a[href^="mailto:"]:focus {
 }
 
 .texto-centrado {
-    flex: 1;              /* ocupa todo el espacio disponible */
-    min-width: 250px;     
-    text-align: center;   /* centra el texto horizontalmente */
+    text-align: center;  /* centra el texto */
+    max-width: 800px;    /* opcional: limita el ancho del párrafo */
+    margin: 0 auto 30px auto; /* centrado y espacio debajo */
 }
 
-.imagenes-juntas {
-    display: flex;
-    flex-direction: column; /* apila las imágenes verticalmente */
-    gap: 15px;             /* espacio entre las imágenes */
+.galeria-horizontal {
+    display: flex;           /* pone las imágenes en fila */
+    justify-content: center; /* centra toda la fila */
+    gap: 20px;               /* espacio entre imágenes */
+    flex-wrap: wrap;         /* si la pantalla es pequeña, se bajan a otra fila */
 }
 
 .imagen-rotada {
     width: 200px;           
-    transform: rotate(-5deg); 
+    transform: rotate(-5deg); /* ligera rotación */
     border-radius: 8px;     
+    transition: transform 0.3s;
 }
+
+.imagen-rotada:hover {
+    transform: rotate(-5deg) scale(1.05); /* efecto hover */
+}
+
