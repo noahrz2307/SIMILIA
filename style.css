@@ -452,3 +452,8 @@ a[href^="mailto:"]:focus {
 .contacto-imagen {
     flex: 0 0 auto;              /* tamaño automático según la imagen */
 }
+
+.contacto h1 {
+    text-align: left;   /* alinea el título a la izquierda */
+    margin-bottom: 20px; /* opcional: espacio debajo del título */
+}
