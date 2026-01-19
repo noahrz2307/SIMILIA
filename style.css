@@ -424,7 +424,7 @@ a[href^="mailto:"]:focus {
 .contacto-texto {
     flex: 1;                     /* ocupa todo el espacio disponible para texto */
     min-width: 250px;            /* evita que se comprima demasiado en móvil */
-    text-align: left;            /* texto alineado a la izquierda */
+    text-align: center;            /* texto alineado a la izquierda */
 }
 
 .contacto-imagen {
