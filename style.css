@@ -434,3 +434,21 @@ a[href^="mailto:"]:focus {
     transform: rotate(-5deg);    /* ligera rotación */
     border-radius: 8px;          /* esquinas redondeadas */
 }
+.contacto-container {
+    display: flex;
+    align-items: center;        /* centra verticalmente */
+    justify-content: space-between; /* espacio entre texto e imagen */
+    gap: 20px;                  /* separación entre columnas */
+    flex-wrap: wrap;            /* se adapta en móviles */
+    margin-top: 20px;           /* espacio desde el título */
+}
+
+.contacto-texto {
+    flex: 1;                     /* ocupa todo el espacio disponible para texto */
+    min-width: 250px;            /* evita que se comprima demasiado en móvil */
+    text-align: left;            /* texto alineado a la izquierda */
+}
+
+.contacto-imagen {
+    flex: 0 0 auto;              /* tamaño automático según la imagen */
+}
