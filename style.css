@@ -409,33 +409,8 @@ a[href^="mailto:"]:focus {
     margin-top: 15px;         /* espacio entre texto e imagen */
     display: block;           /* para que se coloque debajo del párrafo */
 }
-
 .contacto-container {
     display: flex;              /* pone texto e imagen en fila */
-    align-items: center;        /* centra verticalmente */
-    justify-content: space-between; /* espacio entre columnas */
-    gap: 20px;                  /* separación entre texto e imagen */
-    flex-wrap: wrap;            /* se adapta en móviles */
-    margin-top: 20px;           /* espacio desde el título */
-}
-
-.contacto-texto {
-    flex: 1;                     /* ocupa todo el espacio disponible para texto */
-    min-width: 250px;            /* evita que se comprima demasiado en móvil */
-    text-align: left;            /* texto alineado a la izquierda */
-}
-
-.contacto-imagen {
-    flex: 0 0 auto;              /* tamaño automático según la imagen */
-}
-
-.imagen-rotada-peque {
-    width: 150px;                /* tamaño pequeño */
-    transform: rotate(-5deg);    /* ligera rotación */
-    border-radius: 8px;          /* esquinas redondeadas */
-}
-.contacto-container {
-    display: flex;
     align-items: center;        /* centra verticalmente */
     justify-content: space-between; /* espacio entre texto e imagen */
     gap: 20px;                  /* separación entre columnas */
@@ -455,5 +430,11 @@ a[href^="mailto:"]:focus {
 
 .contacto h1 {
     text-align: left;   /* alinea el título a la izquierda */
-    margin-bottom: 20px; /* opcional: espacio debajo del título */
+    margin-bottom: 20px; /* espacio debajo del título */
+}
+
+.imagen-rotada-peque {
+    width: 150px;                /* tamaño pequeño */
+    transform: rotate(-5deg);    /* ligera rotación */
+    border-radius: 8px;          /* esquinas redondeadas */
 }
