@@ -403,7 +403,7 @@ a[href^="mailto:"]:focus {
     transform: rotate(-5deg) scale(1.05); /* efecto hover */
 }
 .imagen-rotada-peque {
-    width: 200px;             /* tamaño pequeño */
+    width: 150px;             /* tamaño pequeño */
     transform: rotate(-5deg); /* ligera rotación */
     border-radius: 8px;       /* opcional, esquinas redondeadas */
     margin-top: 15px;         /* espacio entre texto e imagen */
@@ -438,7 +438,7 @@ a[href^="mailto:"]:focus {
 }
 
 .imagen-rotada-peque {
-    width: 150px;                /* tamaño pequeño */
+    width: 200px;                /* tamaño pequeño */
     transform: rotate(-5deg);    /* ligera rotación */
     border-radius: 8px;          /* esquinas redondeadas */
 }
