@@ -430,7 +430,11 @@ a[href^="mailto:"]:focus {
 
 .contacto h1 {
     text-align: left;   /* alinea el título a la izquierda */
-    margin-bottom: 5px; /* espacio debajo del título */
+    margin-bottom: 10px; /* espacio debajo del título */
+}
+/* Opcional: reduce el margen de los párrafos solo dentro de contacto-container */
+.contacto-container .contacto-texto p {
+    margin: 5px 0;
 }
 
 .imagen-rotada-peque {
